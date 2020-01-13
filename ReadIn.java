@@ -1,5 +1,4 @@
 import java.io.BufferedReader;
-
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
@@ -10,7 +9,7 @@ import java.util.*;
  * from text files and extracts information from the files to use in the
  * initialization process.
  * 
- * @author charlie.minges
+ * @author 
  *
  */
 public class ReadIn {

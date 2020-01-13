@@ -1,4 +1,3 @@
- 
 
 /**
  * A class that will represent one object from the world. Will include constructor as
@@ -34,19 +33,6 @@ public class Item {
     public void look() {
         System.out.println(description_);
     }
-
-    /**
-     * Method that creates the items 
-     *
-     */
-    
-     public void createItem() {
-         Item Strawberry_cake_mix, Apple_pie_mix, Key;
-         Strawberry_cake_mix = new Item("Stawberry cake mix","A cake mix for strawberry cake. It's one of those simplistic mixes where the only thing you have to add is water.So easy even you couln't fack it up", "basement");
-         Apple_pie_mix = new Item("Apple pie mix", "A pie mix for apple pie. It's an very simple mix, you only have to add water. Who knows where the apples come from?!", "basement");
-         Key = new Item("key", "a very keylike key", "warehouse");
-
-        }
         
     /**
      * Getter method that returns the items name.

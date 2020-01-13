@@ -5,7 +5,7 @@ import java.util.*;
  * out proper information due to any given input. Stops when player has won or
  * decides to quit.
  * 
- * @author charlie.minges
+ * @author 
  *
  */
 public class Main {

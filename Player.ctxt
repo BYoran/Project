@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Player
-comment0.text=\r\n\ Class\ made\ to\ represent\ a\ player\ in\ the\ game\ "adventure."\ Will\ Contain\r\n\ information\ about\ the\ players\ location,\ as\ well\ as\ what\ they\ have\ in\ their\r\n\ inventory.\ Methods\ include\ move,\ to\ move\ the\ player\ throughout\ he\ world,\ as\r\n\ well\ as\ getters\ for\ instance\ variables.\r\n\ \r\n\ @author\ charlie.minges\r\n\r\n
+comment0.text=\r\n\ Class\ made\ to\ represent\ a\ player\ in\ the\ game\ "adventure."\ Will\ Contain\r\n\ information\ about\ the\ players\ location,\ as\ well\ as\ what\ they\ have\ in\ their\r\n\ inventory.\ Methods\ include\ move,\ to\ move\ the\ player\ throughout\ he\ world,\ as\r\n\ well\ as\ getters\ for\ instance\ variables.\r\n\ \r\n\ @author\ \r\n\r\n
 comment1.params=
 comment1.target=Player()
 comment1.text=\r\n\ Constructor\ that\ initializes\ the\ player\ location\ to\ the\ first\ room\r\n

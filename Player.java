@@ -6,7 +6,7 @@ import java.util.*;
  * inventory. Methods include move, to move the player throughout he world, as
  * well as getters for instance variables.
  * 
- * @author charlie.minges
+ * @author 
  *
  */
 public class Player {

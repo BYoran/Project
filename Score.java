@@ -3,7 +3,7 @@
  * A class that represents the requirements of goals for player to reach in
  * order to earn points.
  * 
- * @author charlie.minges
+ * @author 
  *
  */
 public class Score {
