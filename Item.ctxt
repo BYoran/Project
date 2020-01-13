@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=Item
+comment0.text=\r\n\ A\ class\ that\ will\ represent\ one\ object\ from\ the\ world.\ Will\ include\ constructor\ as\r\n\ well\ as\ getter\ methods\ for\ important\ information\ about\ the\ objects.\r\n\ \r\n\ @author\ \r\n\r\n
+comment1.params=name\ descrip\ location
+comment1.target=Item(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ that\ initializes\ objects\ name,\ description,\ and\ starting\ location\r\n\ \r\n\ @param\ name\r\n\ \ \ \ \ \ \ \ \ \ represents\ objects\ name\r\n\ @param\ descrip\r\n\ \ \ \ \ \ \ \ \ \ represents\ objects\ description\r\n\ @param\ location\r\n\ \ \ \ \ \ \ \ \ \ represents\ objects\ starting\ location\r\n
+comment2.params=
+comment2.target=void\ look()
+comment2.text=\r\n\ Method\ used\ to\ print\ out\ the\ items\ description\ for\ player\ to\ read.\r\n
+comment3.params=
+comment3.target=void\ createItem()
+comment3.text=\r\n\ Method\ that\ creates\ the\ items\ \r\n\r\n
+comment4.params=
+comment4.target=java.lang.String\ getName()
+comment4.text=\r\n\ Getter\ method\ that\ returns\ the\ items\ name.\r\n\ @return\r\n\ \ \ \ \ \ String\ representing\ items\ name.\r\n
+comment5.params=
+comment5.target=java.lang.String\ getLocation()
+comment5.text=\r\n\ Getter\ method\ that\ returns\ items\ starting\ location.\r\n\ @return\r\n\ \ \ \ \ \ String\ representing\ items\ starting\ location.\r\n
+comment6.params=
+comment6.target=java.lang.String\ getDescription()
+comment6.text=\r\n\ Getter\ method\ that\ returns\ items\ description.\r\n\ @return\r\n\ \ \ \ \ \ String\ representing\ items\ description.\r\n
+numComments=7

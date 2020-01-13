@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Score
+comment0.text=\r\n\ A\ class\ that\ represents\ the\ requirements\ of\ goals\ for\ player\ to\ reach\ in\r\n\ order\ to\ earn\ points.\r\n\ \r\n\ @author\ charlie.minges\r\n\r\n
+comment1.params=action\ item\ place\ score
+comment1.target=Score(java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment1.text=\r\n\ Constructors\ to\ initialize\ information\ about\ goal.\r\n\ \r\n\ @param\ action\r\n\ \ \ \ \ \ \ \ \ \ \ \ represents\ type\ of\ command\ requires\r\n\ @param\ item\r\n\ \ \ \ \ \ \ \ \ \ \ \ represents\ item\ it\ involves,\ if\ there\ is\ one\r\n\ @param\ place\r\n\ \ \ \ \ \ \ \ \ \ \ \ represents\ where\ action\ is\ to\ take\ place\r\n\ @param\ score\r\n\ \ \ \ \ \ \ \ \ \ \ \ represents\ points\ to\ be\ awarded\r\n
+comment2.params=
+comment2.target=int\ getScore()
+comment2.text=\r\n\ Getter\ method\ that\ returns\ points\ of\ goal.\r\n\ \r\n\ @return\ int\ number\ represents\ points\ to\ be\ awarded\r\n
+comment3.params=
+comment3.target=java.lang.String\ getAction()
+comment3.text=\r\n\ Getter\ method\ that\ returns\ the\ type\ of\ action\ required.\r\n\ \r\n\ @return\ String\ representation\ of\ command\ required\ from\ player\r\n
+comment4.params=
+comment4.target=java.lang.String\ getItem()
+comment4.text=\r\n\ Getter\ method\ the\ returns\ item\ involved,\ if\ there\ is\ one.\r\n\ \r\n\ @return\ name\ of\ item\r\n
+comment5.params=
+comment5.target=java.lang.String\ getPlace()
+comment5.text=\r\n\ Getter\ method\ the\ returns\ where\ action\ is\ to\ take\ place.\r\n\ \r\n\ @return\ name\ of\ room\r\n
+numComments=6
