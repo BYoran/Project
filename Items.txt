@@ -1,0 +1,14 @@
+Strawberry cake mix
+basement
+A cake mix for strawberry cake. It's one of those simplistic mixes where the only thing you have to add is water.
+So easy even you couln't fack it up.
+END
+Apple pie mix
+basement
+A pie mix for apple pie. It's an very simple mix, you only have to add water. 
+Who knows where the apples come from?!.
+END
+Key
+An very keylike key.
+END
+
