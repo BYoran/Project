@@ -96,8 +96,8 @@ public class Main {
                 // move
                 player.move(command[1], rooms);
                 System.out.println(rooms.get(player.getLocation()).getDescription());
-            } else if (command[0].equals("north") || command[0].equals("south") || command[0].equals("east")
-            || command[0].equals("west")) { // wants to move, only by
+            } else if (command[0].equals("north") || command[0].equals("east") || command[0].equals("south")
+            || command[0].equals("west") || command[0].equals("up") || command[0].equals("down")) { // wants to move, only by
                 // giving direction
                 player.move(command[0], rooms);
                 System.out.println(rooms.get(player.getLocation()).getDescription());
@@ -107,6 +107,8 @@ public class Main {
                 } else if (command[0].equals("inventory")) { // if want to check
                     // inventory
                     player.getInventory();
+                } else if (command[0].equals("back")) {
+                    player.back();
                 } else if (command[0].equals("quit")) { // if want to quit
                     System.out.println("Thank you for playing!");
                     System.exit(0);
@@ -119,13 +121,13 @@ public class Main {
             player.checkScores(scores, "visit " + player.getLocation().toLowerCase());
 
             // if we have completed all goals and are in final destination
-            if (scores.isEmpty() && player.getLocation().equals("Long hallway")) {
+            if (scores.isEmpty() && player.getLocation().equals("Kitchen")) {
                 System.out.println("Congratulation. You are able to open the door and get out into the " + '\n'
                     + "jungle. You see a river not far away, which may have people on it. You take" + '\n'
                     + "off in that direction.");
                 System.out.println("You finished with a score of " + player.getScore());
                 System.exit(0);
-            } else if (scores.isEmpty() && !player.getLocation().equals("Long hallway")) {
+            } else if (scores.isEmpty() && !player.getLocation().equals("Kitchen")) {
                 // else if we have completed goals but are not at final
                 // destination
                 System.out.println("You have completed your goals. Try to get to an exit point...");

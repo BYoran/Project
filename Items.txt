@@ -1,14 +1,23 @@
+Old floppy disk
+Kitchen
+An old floppy disk, looks like it hasn't been used for years.
+END
+Key card
+Baking Space
+An dirty old plastic key card. Seems like it can be used for... nothing.
+END
 Strawberry cake mix
-basement
-A cake mix for strawberry cake. It's one of those simplistic mixes where the only thing you have to add is water.
-So easy even you couln't fack it up.
+Basement
+A cake mix for strawberry cake. It's one of those simplistic mixes where the
+only thing you have to add is water. So easy even you couln't fack it up.
 END
 Apple pie mix
-basement
-A pie mix for apple pie. It's an very simple mix, you only have to add water. 
+Cold Store
+A pie mix for apple pie. It's a very simple mix, you only have to add water.
 Who knows where the apples come from?!.
 END
 Key
-An very keylike key.
+Warehouse
+A weird key that looks like a lever lock key from a century ago. It looks like
+it may be able to unlock a padlock of some kind.
 END
-

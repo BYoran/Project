@@ -1,0 +1,3 @@
+TAKE, Strawberry cake mix, Basement, 100
+DROP, Key, Warehouse, 100
+TAKE, Apple pie mix, Basement, 100

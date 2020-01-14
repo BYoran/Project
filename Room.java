@@ -65,16 +65,24 @@ public class Room {
             System.out.print("NORTH, ");
         }
 
-        if (!neighbors_[1].equals("-")) { // if there is spot to south
-            System.out.print("SOUTH, ");
+        if (!neighbors_[1].equals("-")) { // if there is spot to east
+            System.out.print("EAST, ");
         }
 
-        if (!neighbors_[2].equals("-")) { // if there is spot to east
-            System.out.print("EAST, ");
+        if (!neighbors_[2].equals("-")) { // if there is spot to south
+            System.out.print("SOUTH, ");
         }
 
         if (!neighbors_[3].equals("-")) { // if there is spot to west
             System.out.print("WEST, ");
+        }
+        
+        if (!neighbors_[4].equals("-")) {
+            System.out.print("UP, ");
+        }
+        
+        if (!neighbors_[5].equals("-")) {
+            System.out.print("DOWN, ");
         }
 
         System.out.println();
@@ -126,6 +134,5 @@ public class Room {
      */
     public String getDescription() {
         return description_;
-    }
-        
+    }     
 }

@@ -1,0 +1,32 @@
+Kitchen
+-,Cold Store,Warehouse,Baking Space,-,-
+You enter the kitchen, the place where you make your precious recipes. It's the cleanest place of all.
+Unfortunately the required ingredients are not there, but some place else. There are three doors available.
+END
+Cold Store
+-,-,-,Kitchen,-,-
+You enter the cold store, it's pretty cold in there as you might think. The corners are pretty dirty,
+because you never try to clean there. There are no more new doors here, only the kitchen door.
+END
+Baking Space
+-,Kitchen,-,-,Recipes Room,-
+You enter the baking space, it smells like al of your recipes combined. It's real dirty here, you always forget
+to clean this place. There is a ladder going up. It feels unstable, but you always you use it anyway.
+END
+Recipes Room
+-,-,-,-,-,Baking Space
+You enter the recipes room, where you have the book of recipes stored as usual. Today it's not there along
+with the ingredients. You see that the window is open, which was supposed to closed. Nothing new except going
+down the ladder.
+END
+Warehouse
+Kitchen,-,-,-,-,Basement
+You enter the warehouse, the place where you store everything you have. If something is out of stock,
+you'll find in it in here. You see the stock ic currently very low. There is one old, locked door in here
+leading downstairs.
+END
+Basement
+-,-,-,-,Warehouse,-
+You enter the basement, a dark and creepy place. You hate going in here, but you are on a mission searching for
+your stuff. There's a light switch, but sadly it's doesn't work. Luckliy you see just enough in order to search the place.
+END
