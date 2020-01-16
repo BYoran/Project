@@ -108,7 +108,7 @@ public class Main {
                     // inventory
                     player.getInventory();
                 } else if (command[0].equals("back")) {
-                    player.back();
+                    player.back(rooms);
                 } else if (command[0].equals("quit")) { // if want to quit
                     System.out.println("Thank you for playing!");
                     System.exit(0);

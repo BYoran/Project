@@ -10,7 +10,7 @@ import java.util.*;
  *
  */
 public class Player {
-    private static ArrayList<Room> previousRooms = new ArrayList<Room>();
+    private static Stack<String> previousRooms = new Stack<>();
     private static String location_; //name of room player is in
     private static Map<String, Item> inventory_ = new HashMap<String, Item>(); //inventory of items
     private static int score_ = 0; //overall score
@@ -23,14 +23,9 @@ public class Player {
                                                 // address it
     }
 
-    public void addRoom(Room room)
+    public void addRoom(String room)
     {
-        previousRooms.add(room);
-    }
-
-    public void removeRoom(int index)
-    {
-        previousRooms.remove(index);
+        previousRooms.push(room);
     }
     
     /**
@@ -51,42 +46,42 @@ public class Player {
 
         if (direction.equals("north")) { //if direction is north...
             if (!temp[0].equals("-")) {//if there is a room in said direction
-                addRoom(current);
+                addRoom(location_);
                 location_ = temp[0];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
             }
         } else if (direction.equals("east")) {//if direction is east...
             if (!temp[1].equals("-")) {//if there is a room in said direction
-                addRoom(current);
+                addRoom(location_);
                 location_ = temp[1];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
             }
         } else if (direction.equals("south")) {//if direction is south...
             if (!temp[2].equals("-")) { //if there is a room in said direction
-                addRoom(current);
+                addRoom(location_);
                 location_ = temp[2];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
             }
         } else if (direction.equals("west")) {//if direction is west...
             if (!temp[3].equals("-")) {//if there is a room in said direction
-                addRoom(current);
+                addRoom(location_);
                 location_ = temp[3];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
             }
         } else if (direction.equals("up")) {
             if (!temp[4].equals("-")) {
-                addRoom(current);
+                addRoom(location_);
                 location_ = temp[4];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
             }
         } else if (direction.equals("down")) {
             if (!temp[5].equals("-")) {
-                addRoom(current);
+                addRoom(location_);
                 location_ = temp[5];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
@@ -96,11 +91,11 @@ public class Player {
         }
     }
 
-    public void back()
+    public void back(HashMap<String, Room> rooms)
     {
         if (previousRooms.size() > 0) {
-            previousRooms.get(previousRooms.size() - 1);
-            previousRooms.remove(previousRooms.size() - 1);
+            location_ = previousRooms.pop();
+            System.out.println(rooms.get(getLocation()).getDescription());
         }
         else {
             System.out.println("There is nowhere to go back to...");
