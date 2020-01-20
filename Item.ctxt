@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Item
-comment0.text=\r\n\ A\ class\ that\ will\ represent\ one\ object\ from\ the\ world.\ Will\ include\ constructor\ as\r\n\ well\ as\ getter\ methods\ for\ important\ information\ about\ the\ objects.\r\n\ \r\n\ @author\ \r\n\r\n
+comment0.text=\r\n\ A\ class\ that\ will\ represent\ one\ object\ from\ the\ world.\ Will\ include\ constructor\ as\r\n\ well\ as\ getter\ methods\ for\ important\ information\ about\ the\ objects.\r\n\ \r\n\ @author\ Bjorn\ and\ Minco\r\n\r\n
 comment1.params=name\ descrip\ location
 comment1.target=Item(java.lang.String,\ java.lang.String,\ java.lang.String)
 comment1.text=\r\n\ Constructor\ that\ initializes\ objects\ name,\ description,\ and\ starting\ location\r\n\ \r\n\ @param\ name\r\n\ \ \ \ \ \ \ \ \ \ represents\ objects\ name\r\n\ @param\ descrip\r\n\ \ \ \ \ \ \ \ \ \ represents\ objects\ description\r\n\ @param\ location\r\n\ \ \ \ \ \ \ \ \ \ represents\ objects\ starting\ location\r\n

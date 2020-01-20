@@ -6,23 +6,29 @@ import java.util.*;
  * inventory. Methods include move, to move the player throughout he world, as
  * well as getters for instance variables.
  * 
- * @author 
+ * @author Bjorn and Minco
  *
  */
 public class Player {
     private static Stack<String> previousRooms = new Stack<>();
-    private static String location_; //name of room player is in
-    private static Map<String, Item> inventory_ = new HashMap<String, Item>(); //inventory of items
-    private static int score_ = 0; //overall score
+    private static String location_; // name of room player is in
+    private static Map<String, Item> inventory_ = new HashMap<String, Item>(); // inventory of items
+    private static int score_ = 0; // overall score
 
     /**
-     * Constructor that initializes the player location to the first room
+     * Constructor that initializes the player location to the first room.
      */
     public Player() {
         location_ = "Kitchen"; // set to first room, however we
                                                 // address it
     }
 
+    /**
+     * Method that will be used to add current player location into stack.
+     * 
+     * @param room
+     *            room that represents location of player  
+     */
     public void addRoom(String room)
     {
         previousRooms.push(room);
@@ -31,7 +37,7 @@ public class Player {
     /**
      * Move is a method that will be responsible for moving the player from the
      * room they are currently in, to any of the possible adjacent rooms. The direction
-     * must be north, south, east, or west.
+     * must be north, south, east, west, up or down.
      * 
      * @param direction
      *            string to represent direction player wishes to travel
@@ -44,62 +50,117 @@ public class Player {
 
         String[] temp = current.getNeighbors();
 
-        if (direction.equals("north")) { //if direction is north...
-            if (!temp[0].equals("-")) {//if there is a room in said direction
+        if (direction.equals("north")) { // if direction is north...
+            if (!temp[0].equals("-")) { // if there is a room in said direction
                 addRoom(location_);
                 location_ = temp[0];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
+                System.out.println();
             }
-        } else if (direction.equals("east")) {//if direction is east...
-            if (!temp[1].equals("-")) {//if there is a room in said direction
+        } else if (direction.equals("east")) { // if direction is east...
+            if (!temp[1].equals("-")) { // if there is a room in said direction
                 addRoom(location_);
                 location_ = temp[1];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
+                System.out.println();
             }
-        } else if (direction.equals("south")) {//if direction is south...
-            if (!temp[2].equals("-")) { //if there is a room in said direction
+        } else if (direction.equals("south")) { // if direction is south...
+            if (!temp[2].equals("-")) { // if there is a room in said direction
                 addRoom(location_);
                 location_ = temp[2];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
+                System.out.println();
             }
-        } else if (direction.equals("west")) {//if direction is west...
-            if (!temp[3].equals("-")) {//if there is a room in said direction
+        } else if (direction.equals("west")) { // if direction is west...
+            if (!temp[3].equals("-")) { // if there is a room in said direction
                 addRoom(location_);
                 location_ = temp[3];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
+                System.out.println();
             }
-        } else if (direction.equals("up")) {
-            if (!temp[4].equals("-")) {
+        } else if (direction.equals("up")) { // if direction is up...
+            if (temp[4].equals("Warehouse") && !inventory_.containsKey("key")) { // if there is a room in said direction
+                System.out.println("You need a key to unlock the door");
+                System.out.println();
+            } else if (temp[4].equals("Trap Room")) {
+                addRoom(location_);
+                goRandomRoom();
+            } else if (!temp[4].equals("-")) { // if there is a room in said direction
                 addRoom(location_);
                 location_ = temp[4];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
+                System.out.println();
             }
-        } else if (direction.equals("down")) {
-            if (!temp[5].equals("-")) {
+        } else if (direction.equals("down")) { // if direction is down...
+            if (temp[5].equals("Basement") && !inventory_.containsKey("key")) {
+                System.out.println("You need a key to unlock the door");
+                System.out.println();
+            } else if (!temp[5].equals("-")) { // if there is a room in said direction
                 addRoom(location_);
                 location_ = temp[5];
             } else {
                 System.out.println("Sorry, cannot go this way, try again!");
+                System.out.println();
              }
-        } else { //else
+        } else { // else
             System.out.println("Sorry, not valid direction, try again!");
+            System.out.println();
         }
     }
 
+    /**
+     * Back is a method that will be responsible for returning the player from
+     * the room they are currently in, to the room they were previously.
+     * 
+     * @param rooms
+     *            stack that contains all the previous visited rooms
+     */
     public void back(HashMap<String, Room> rooms)
     {
-        if (previousRooms.size() > 0) {
+        if (previousRooms.size() > 0) { // if stack is greater then zero
             location_ = previousRooms.pop();
             System.out.println(rooms.get(getLocation()).getDescription());
         }
-        else {
+        else { // else
             System.out.println("There is nowhere to go back to...");
+            System.out.println();
         }
+    }
+    
+    /**
+     * Method that will be used to random determine which room the player will
+     * be put in. It will always have a random number.
+     */
+    public void goRandomRoom() {
+        int random = (int)(Math.random() * 9);
+        
+        // select a random room
+        if (random == 1) {
+            location_ = "Kitchen";
+        } else if (random == 2) {
+            location_ = "Cooling Space";
+        } else if (random == 3) {
+            location_ = "Oven Room";
+        } else if (random == 4) {
+            location_ = "Recipes Room";
+        } else if (random == 5) {
+            location_ = "Warehouse";
+        } else if (random == 6) {
+            location_ = "Basement";
+        } else if (random == 7) {
+            location_ = "Transport Platform";
+        } else if (random == 8) {
+            location_ = "Hallway";
+        } else if (random == 9) {
+            location_ = "BreakRoom";
+        }
+        System.out.println("Oh no! There is a blackhole sucking you in it... It brings you to a random room...");
+        System.out.println();
     }
     
     /**
@@ -114,15 +175,26 @@ public class Player {
         Room current = rooms.get(location_);
 
         Item temp = null;
-
-        if (current.getInventory().containsKey(item)) { // item is in room
-            temp = current.getInventory().get(item);
-
-            current.getInventory().remove(item);
-            inventory_.put(temp.getName(), temp);
-            System.out.println(item + " was successfully added");
-        } else { //else
-            System.out.println("Sorry, " + item + " is not in the room.");
+        if (inventory_.size() < 3) {
+            if (current.getInventory().containsKey(item)) { // item is in room
+                if (item.equals("paper of truth") || item.equals("ugandan knuckles") || item.equals("piece of paper") || item.equals("ok boomer") || item.equals("the boys") || item.equals("broken bottle")) {
+                    System.out.println("You can't take this item");
+                    System.out.println();
+                } else {
+                    temp = current.getInventory().get(item);
+        
+                    current.getInventory().remove(item);
+                    inventory_.put(temp.getName(), temp);
+                    System.out.println(item + " was successfully added");
+                    System.out.println();
+                }
+            } else { // else
+                System.out.println("Sorry, " + item + " is not in the room.");
+                System.out.println();
+            }
+        } else {
+            System.out.println("Sorry, but you can't carry any more items.");
+            System.out.println();
         }
     }
 
@@ -135,20 +207,64 @@ public class Player {
      */
     public void drop(String item, HashMap<String, Room> rooms) {
         Item temp = null;
-
-        if (inventory_.containsKey(item)) { //if item is in inventory
-            temp = inventory_.get(item);
-            inventory_.remove(item);
-
-            Room current = rooms.get(location_);
-
-            current.getInventory().put(temp.getName(), temp);
-            System.out.println(item + " was successfully dropped");
+        
+        if (inventory_.containsKey(item)) { // if item is in inventory
+            if (!item.equals("key")) {
+                temp = inventory_.get(item);
+                inventory_.remove(item);
+    
+                Room current = rooms.get(location_);
+    
+                current.getInventory().put(temp.getName(), temp);
+                System.out.println(item + " was successfully dropped");
+                System.out.println();
+            } else {
+                System.out.println("You can't drop your key, because you need it to open the door");
+                System.out.println();
+            }
         } else { // else
             System.out.println("Sorry, " + item + " is not in your inventory.");
+            System.out.println();
         }
     }
-
+    
+    /**
+     * Method that will be responsible for baking the specified recipe from your
+     * inventory when you are in the kitchen. Must already have specified recipe
+     * in your inventory.
+     * 
+     * @param item
+     *            represents recipe you wish to bake from your inventory
+     */
+    public void bake(String item, HashMap<String, Room> rooms) {
+        Item temp = null;
+        
+        if (getLocation().equals("Kitchen")) { // if location player is kitchen
+            if (item.equals("strawberry cake mix")) {
+                temp = inventory_.get(item);
+                inventory_.remove(item);
+                
+                Room current = rooms.get(location_);
+    
+                current.getInventory().put(temp.getName(), temp);
+                System.out.println("Congratulations! You have made the strawberry cake!");
+                System.out.println();
+            } else if (item.equals("apple pie mix")) {
+                temp = inventory_.get(item);
+                inventory_.remove(item);
+                
+                Room current = rooms.get(location_);
+    
+                current.getInventory().put(temp.getName(), temp);
+                System.out.println("Congratulations! You have made the apple pie!");
+                System.out.println();
+            }
+        } else {
+            System.out.println("Sorry, but you need to be in the kitchen if you want to make any of the recipes.");
+            System.out.println();
+        }
+    }
+        
     /**
      * Getter method that returns the players location.
      * 
@@ -163,9 +279,9 @@ public class Player {
      * Getter method that prints out the objects in the players inventory.
      */
     public void getInventory() {
-        if (inventory_.isEmpty()) { //if inventory is empty
+        if (inventory_.isEmpty()) { // if inventory is empty
             System.out.println("Inventory is empty");
-        } else { //else
+        } else { // else
             for (Map.Entry<String, Item> elt : inventory_.entrySet()) {
                 System.out.println(elt.getKey());
             }
@@ -210,7 +326,7 @@ public class Player {
      *          
      */
     public void checkScores(HashMap<String, Score> scores, String ref) {
-        if (scores.containsKey(ref)) { //if scores contains key
+        if (scores.containsKey(ref)) { // if scores contains key
             score_ = score_ + scores.get(ref).getScore();
             scores.remove(ref);
         }

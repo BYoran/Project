@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Room
-comment0.text=\r\n\ A\ class\ that\ will\ represent\ each\ room\ featured\ in\ the\ game.\ Will\ include\ getter\r\n\ methods,\ as\ well\ setters\ to\ change\ the\ items\ in\ the\ room\ at\ any\ given\ time.\r\n\ \r\n\ @author\ \r\n\r\n
+comment0.text=\r\n\ A\ class\ that\ will\ represent\ each\ room\ featured\ in\ the\ game.\ Will\ include\ getter\r\n\ methods,\ as\ well\ setters\ to\ change\ the\ items\ in\ the\ room\ at\ any\ given\ time.\r\n\ \r\n\ @author\ Bjorn\ and\ Minco\r\n\r\n
 comment1.params=name\ description\ neighbors\ items
 comment1.target=Room(java.lang.String,\ java.lang.String,\ java.lang.String[],\ java.util.HashMap)
 comment1.text=\r\n\ Constructor\ that\ initialized\ information\ about\ the\ room\ and\ puts\ items\r\n\ put\ items\ that\ start\ in\ the\ room\ in\ it's\ inventory.\r\n\ \r\n\ @param\ name\r\n\ \ \ \ \ \ \ \ \ \ represents\ name\ of\ room\r\n\ @param\ description\r\n\ \ \ \ \ \ \ \ \ \ represents\ short\ description\ of\ room\r\n\ @param\ neighbors\r\n\ \ \ \ \ \ \ \ \ \ represents\ the\ rooms\ neighbors\r\n\ @param\ items\r\n\ \ \ \ \ \ \ \ \ \ represents\ collection\ of\ items\ in\ world\r\n

@@ -1,3 +1,4 @@
-TAKE, Strawberry cake mix, Basement, 100
-DROP, Key, Warehouse, 100
-TAKE, Apple pie mix, Basement, 100
+TAKE, Strawberry cake mix, Basement, 50
+BAKE, Strawberry cake mix, Kitchen, 100
+TAKE, Apple pie mix, Basement, 50
+BAKE, Apple pie mix, Kitchen, 100

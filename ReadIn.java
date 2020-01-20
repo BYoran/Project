@@ -9,7 +9,7 @@ import java.util.*;
  * from text files and extracts information from the files to use in the
  * initialization process.
  * 
- * @author 
+ * @author Bjorn and Minco
  *
  */
 public class ReadIn {
@@ -132,15 +132,11 @@ public class ReadIn {
                 }
 
                 String ref = "";
-                if (temp[0].equals("VISIT")) { // if actions is to visit a room
-                    // ref will be "VISIT" and room name
-                    ref = temp[0] + " " + temp[2];
-                } else { // else
-                    // will be action plus object name
-                    ref = temp[0] + " " + temp[1];
-                }
+                
+                // will be action plus object name
+                ref = temp[0] + " " + temp[1];
                 ref = ref.toLowerCase();
-
+                
                 // put new Score object and ref to HashMap
                 scores.put(ref, new Score(temp[0], temp[1], temp[2], Integer.parseInt(temp[3])));
 

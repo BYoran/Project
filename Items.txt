@@ -3,7 +3,7 @@ Kitchen
 An old floppy disk, looks like it hasn't been used for years.
 END
 Key card
-Baking Space
+Oven Room
 An dirty old plastic key card. Seems like it can be used for... nothing.
 END
 Strawberry cake mix
@@ -12,56 +12,56 @@ A cake mix for strawberry cake. It's one of those simplistic mixes where the
 only thing you have to add is water. So easy even you couln't fack it up.
 END
 Apple pie mix
-Cold Store
+Recipes Room
 A pie mix for apple pie. It's a very simple mix, you only have to add water.
 Who knows where the apples come from?!.
 END
 Key
-Warehouse
+Hallway
 A weird key that looks like a lever lock key from a century ago. It looks like
 it may be able to unlock a padlock of some kind.
 END
 Paper of Truth
-
+Basement
 It's a piece of paper wich always tells the truth. It says KOFA is a bad teacher.
 END
 Ugandan Knuckles
-
+Hallway
 You found da way.
 END
 Loops
-
+Cooling Space
 you found the loops for your brother
 END
 Piece of paper
-
+Recipes Room
 It`s a piece of paper that says: "vibe check".
 END
 Baby Yoda
-
+Basement
 You found baby Yoda and put him in your pocket.
 END
 OK boomer
-
+Trap Room
 10-4 dinosaur.
 END
 The boys
-
+Transport Platform
 You found the boys. Now it's you and the boys making a cake.
 END
 Broken Bottle
-
+Kitchen
 You found a bottle but it's broken. It's useless.
 END
 Piece of candy
-
+Recipes Room
 you pick up a piece of candy and eat it.
 END
 baking powder
-
+Oven Room
 You find some baking powder. Thinking its cocaine you snort some.
 END
 Flower
-
+Cooling Space
 You find some flower. Thinking its cocain you snort some.
 END

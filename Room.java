@@ -4,14 +4,14 @@ import java.util.*;
  * A class that will represent each room featured in the game. Will include getter
  * methods, as well setters to change the items in the room at any given time.
  * 
- * @author 
+ * @author Bjorn and Minco
  *
  */
 public class Room {
-    private String name_; //name of room
-    private String[] neighbors_; //names of neighboring rooms
-    private String description_; //short description
-    private HashMap<String, Item> items_ = new HashMap<String, Item>(); //inventory of item in room
+    private String name_; // name of room
+    private String[] neighbors_; // names of neighboring rooms
+    private String description_; // short description
+    private HashMap<String, Item> items_ = new HashMap<String, Item>(); // inventory of item in room
 
     /**
      * Constructor that initialized information about the room and puts items
@@ -43,11 +43,17 @@ public class Room {
      *          represents collection of items in world
      */
     public void setItems(HashMap<String, Item> items) {
-        for (Map.Entry<String, Item> elt : items.entrySet()) { //iterate through collection
-            //if items location matches rooms name...
+        for (Map.Entry<String, Item> elt : items.entrySet()) { // iterate through collection
+            // if items location matches rooms name...
             if (elt.getValue().getLocation().equals(name_)) {
-                //...put item in room
-                items_.put(elt.getKey(), elt.getValue());
+                //if (elt.getValue().getName().equals("")) {
+                //    Random rand = new Random();
+                //    rand.nextInt(2 + 1);
+                //    items_.put(elt.getKey(), elt.getValue());
+                //} else {
+                    //...put item in room
+                    items_.put(elt.getKey(), elt.getValue());
+                //}
             }
         }
     }
@@ -59,40 +65,40 @@ public class Room {
     public void look() {
         System.out.println(description_);
 
-        System.out.println("Can exit to the ");
+        System.out.println("Can exit to the: ");
         // traverse neighbors array
         if (!neighbors_[0].equals("-")) { // if there is spot to north
-            System.out.print("NORTH, ");
+            System.out.print("NORTH ");
         }
 
         if (!neighbors_[1].equals("-")) { // if there is spot to east
-            System.out.print("EAST, ");
+            System.out.print("EAST ");
         }
 
         if (!neighbors_[2].equals("-")) { // if there is spot to south
-            System.out.print("SOUTH, ");
+            System.out.print("SOUTH ");
         }
 
         if (!neighbors_[3].equals("-")) { // if there is spot to west
-            System.out.print("WEST, ");
+            System.out.print("WEST ");
         }
         
-        if (!neighbors_[4].equals("-")) {
-            System.out.print("UP, ");
+        if (!neighbors_[4].equals("-")) { // if there is spot up
+            System.out.print("UP ");
         }
         
-        if (!neighbors_[5].equals("-")) {
-            System.out.print("DOWN, ");
+        if (!neighbors_[5].equals("-")) { // if there is spot down
+            System.out.print("DOWN ");
         }
 
         System.out.println();
         System.out.println();
 
         if (items_.isEmpty()) { // if collection of items in room is empty
-            System.out.println("No items in room, sorry.");
+            System.out.println("There are no items in the room, sorry.");
         } else { // else, items in room, print them out
             for (Map.Entry<String, Item> elt : items_.entrySet()) { // iterate                                      
-                System.out.print(elt.getKey() + ", ");
+                System.out.print(elt.getKey() + " ");
             }
             System.out.println(" are in the room.");
         }

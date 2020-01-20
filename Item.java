@@ -3,13 +3,13 @@
  * A class that will represent one object from the world. Will include constructor as
  * well as getter methods for important information about the objects.
  * 
- * @author 
+ * @author Bjorn and Minco
  *
  */
 public class Item {
-    private String name_; //name of item
-    private String description_; //short description
-    private String location_; //name of room item starts in
+    private String name_; // name of item
+    private String description_; // short description
+    private String location_; // name of room item starts in
 
     /**
      * Constructor that initializes objects name, description, and starting location

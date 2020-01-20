@@ -28,18 +28,25 @@ END
 Basement
 -,-,-,-,Warehouse,-
 You enter the basement, a dark and creepy place. You hate going in here, but you are on a mission searching for
-your stuff. There's a light switch, but sadly it's doesn't work. Luckliy you see just enough in order to search the place.
+your stuff. There's a light switch, but sadly it's doesn't work. Luckliy you see just enough in order to search
+the place.
 END
 Transport Platform
--,Cooling Space,-,-,-,-
-You step onto the transpot and look around. There is not much to see except for a couple parking spots for trucks and some trolleys to move stuff around.
+-,Cooling Space,-,-,Trap Room,-
+You step onto the transpot and look around. There is not much to see except for a couple parking spots for trucks
+and some trolleys to move stuff around.
 END
 Hallway
 -,-,-,Oven Room,Break Room,-
-You go into the hallway. Most of the time it's used as semi-storage area when people need quick access to some machinery, there is also the stairs leading up to the break room.
+You go into the hallway. Most of the time it's used as semi-storage area when people need quick access to some
+machinery, there are also the stairs leading up to the break room.
 END
 Break Room
 -,-,-,-,-,Hallway
-You step into the break room, there is a espresso machine and an kettle. There is also a large table with chairs where multiple people can go and sit.
+You step into the break room, there is an espresso machine and a kettle. There is also a large table with chairs
+where multiple people can go and sit on it.
 END
-
+Trap Room
+-,-,-,-,-,Transport Platform
+Oh no! There is a blackhole sucking you in it... It brings you to a random room...
+END
