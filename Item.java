@@ -29,6 +29,8 @@ public class Item {
     
     /**
      * Method used to print out the items description for player to read.
+     *
+     * @author minco
      */
     public void look() {
         System.out.println(description_);
@@ -36,6 +38,8 @@ public class Item {
         
     /**
      * Getter method that returns the items name.
+     *
+     * @author minco
      * @return
      *      String representing items name.
      */
@@ -45,6 +49,8 @@ public class Item {
     
     /**
      * Getter method that returns items starting location.
+     *
+     * @author minco
      * @return
      *      String representing items starting location.
      */
@@ -54,6 +60,8 @@ public class Item {
     
     /**
      * Getter method that returns items description.
+     * 
+     * @author minco
      * @return
      *      String representing items description.
      */
