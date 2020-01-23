@@ -9,7 +9,7 @@ import java.util.*;
  * @author Bjorn and Minco
  *
  */
-public class Player {
+public class Player { 
     private static Stack<String> previousRooms = new Stack<>();
     private static String location_; // name of room player is in
     private static Map<String, Item> inventory_ = new HashMap<String, Item>(); // inventory of items
@@ -25,6 +25,8 @@ public class Player {
 
     /**
      * Method that will be used to add current player location into stack.
+     *
+     * @author Bjorn
      * 
      * @param room
      *            room that represents location of player  
@@ -39,6 +41,8 @@ public class Player {
      * room they are currently in, to any of the possible adjacent rooms. The direction
      * must be north, south, east, west, up or down.
      * 
+     * @author bjorn
+     *
      * @param direction
      *            string to represent direction player wishes to travel
      * @param rooms
@@ -116,6 +120,7 @@ public class Player {
     /**
      * Back is a method that will be responsible for returning the player from
      * the room they are currently in, to the room they were previously.
+     * @author minco
      * 
      * @param rooms
      *            stack that contains all the previous visited rooms
@@ -135,6 +140,7 @@ public class Player {
     /**
      * Method that will be used to random determine which room the player will
      * be put in. It will always have a random number.
+     * @author minco
      */
     public void goRandomRoom() {
         int random = (int)(Math.random() * 9);
@@ -166,6 +172,7 @@ public class Player {
     /**
      * Method that will be used to add an object from the room you are in to
      * your inventory. Object must be in room you are in.
+     * @author bjorn
      * 
      * @param item
      *            represents item you wish to add to your inventory
@@ -201,6 +208,7 @@ public class Player {
     /**
      * Method that will be responsible for dropping an item from you inventory
      * to the room you are in. Must already have object in your inventory.
+     * @author minco
      * 
      * @param item
      *            represents name of item you wish to drop
@@ -232,6 +240,7 @@ public class Player {
      * Method that will be responsible for baking the specified recipe from your
      * inventory when you are in the kitchen. Must already have specified recipe
      * in your inventory.
+     * @author minco
      * 
      * @param item
      *            represents recipe you wish to bake from your inventory
@@ -318,6 +327,8 @@ public class Player {
     /**
      * Method used to check whether a given action from player warrants giving them
      * points.
+     *
+     * @author bjorn
      * 
      * @param scores
      *          collection of Score objects
