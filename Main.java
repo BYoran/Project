@@ -12,7 +12,7 @@ public class Main {
 
     /**
      * Method to represent player interaction with game.
-     * 
+     * @author bjorn and minco
      * @param args
      * 
      */
