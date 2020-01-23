@@ -1,4 +1,6 @@
-TAKE, Strawberry cake mix, Basement, 50
+TAKE, Strawberry cake mix, Basement, 25
+TAKE, Baking powder, Oven Room, 25
 BAKE, Strawberry cake mix, Kitchen, 100
-TAKE, Apple pie mix, Basement, 50
+TAKE, Apple pie mix, Basement, 25
+TAKE, Flower, Cooling Space, 25
 BAKE, Apple pie mix, Kitchen, 100
