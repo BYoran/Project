@@ -14,7 +14,7 @@ You enter the oven room, it smells like al of your recipes combined. It's real d
 to clean this place. There is a ladder going up. It feels unstable, but you always you use it anyway.
 END
 Recipes Room
--,-,-,-,-,Oven Room
+-,Break Room,-,-,-,Oven Room
 You enter the recipes room, where you have the book of recipes stored as usual. Today it's not there along
 with the ingredients. You see that the window is open, which was supposed to closed. Nothing new except going
 down the ladder.
@@ -22,7 +22,7 @@ END
 Warehouse
 Kitchen,-,-,-,-,Basement
 You enter the warehouse, the place where you store everything you have. If something is out of stock,
-you'll find in it in here. You see the stock ic currently very low. There is one old, locked door in here
+you'll find it most likely in here. You see the stock ic currently very low. There is one old, locked door in here
 leading downstairs.
 END
 Basement
@@ -33,20 +33,20 @@ the place.
 END
 Transport Platform
 -,Cooling Space,-,-,Trap Room,-
-You step onto the transpot and look around. There is not much to see except for a couple parking spots for trucks
+You step onto the transport platform and look around. There is not much to see except for a couple parking spots for trucks
 and some trolleys to move stuff around.
 END
 Hallway
--,-,-,Oven Room,Break Room,-
+-,-,-,Trap Room,Break Room,-
 You go into the hallway. Most of the time it's used as semi-storage area when people need quick access to some
 machinery, there are also the stairs leading up to the break room.
 END
 Break Room
--,-,-,-,-,Hallway
+-,-,-,Recipes Room,-,Hallway
 You step into the break room, there is an espresso machine and a kettle. There is also a large table with chairs
 where multiple people can go and sit on it.
 END
 Trap Room
--,-,-,-,-,Transport Platform
+-,Hallway,-,Oven Room,-,-
 Oh no! There is a blackhole sucking you in it... It brings you to a random room...
 END
