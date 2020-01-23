@@ -9,7 +9,7 @@ You enter the cooling room, it's pretty cold in there as you might think. The co
 because you never try to clean there. There are no more new doors here, only the kitchen door.
 END
 Oven Room
--,Hallway,-,Kitchen,Recipes Room,-
+-,Trap Room,-,Kitchen,Recipes Room,-
 You enter the oven room, it smells like al of your recipes combined. It's real dirty here, you always forget
 to clean this place. There is a ladder going up. It feels unstable, but you always you use it anyway.
 END
