@@ -19,14 +19,14 @@ END
 Key
 Hallway
 A weird key that looks like a lever lock key from a century ago. It looks like
-it may be able to unlock a padlock of some kind.
+it can be used to unlock a padlock of some kind.
 END
 Paper of Truth
 Basement
 It's a piece of paper wich always tells the truth. It says KOFA is a bad teacher.
 END
 Ugandan Knuckles
-Hallway
+Warehouse
 You found da way.
 END
 Loops
@@ -39,10 +39,10 @@ It`s a piece of paper that says: "vibe check".
 END
 Baby Yoda
 Basement
-You found baby Yoda and put him in your pocket.
+You find baby Yoda and put him in your pocket.
 END
 OK boomer
-Trap Room
+Transport Platform
 10-4 dinosaur.
 END
 The boys
@@ -64,4 +64,8 @@ END
 Flower
 Cooling Space
 You find some flower. Thinking its cocain you snort some.
+END
+Dandelion Particles
+Break Room
+You found some dandelion particles, they usually are very expensive.
 END
