@@ -17,6 +17,7 @@ public class Room {
      * Constructor that initialized information about the room and puts items
      * put items that start in the room in it's inventory.
      * 
+     * @author bjorn 
      * @param name
      *          represents name of room
      * @param description
@@ -38,7 +39,7 @@ public class Room {
      * Method that puts items into the room that their starting location 
      * specifies. Must use HashMap of that represents all of the items in
      * the world.
-     * 
+     * @author minco
      * @param items
      *          represents collection of items in world
      */
@@ -61,6 +62,8 @@ public class Room {
     /**
      * Method that is meant to print out a the rooms short description, its neighbors,
      * and any items in the room at the time.
+     * 
+     * @author minco
      */
     public void look() {
         System.out.println(description_);
@@ -108,6 +111,7 @@ public class Room {
     /**
      * Getter method that returns an array of string representing the rooms neighbors.
      * 
+     * @author minco
      * @return 
      *      Array of names of the rooms that connect to the current room
      */
