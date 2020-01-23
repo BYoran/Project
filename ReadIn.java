@@ -20,6 +20,7 @@ public class ReadIn {
      * A HashMap of items to be stored in the rooms must be created first, as it
      * will be passed through as a parameter to put object in the correct rooms.
      * 
+     * @author minco
      * @param items
      *            represents the HashMap that represents collection of items in
      *            world
@@ -70,6 +71,7 @@ public class ReadIn {
      * Method that will create and initialize a collection of the items that
      * will be placed in the game. Will read from predetermined text file. File
      * must exist to be read.
+     * @author bjorn
      * 
      * @return returns a HashMap representing collection of items
      */
@@ -114,7 +116,7 @@ public class ReadIn {
      * Method that will create a collection of Score items, which hold
      * requirements that must be met in order for the player to earn points.
      * Reads in from a predetermined text file.
-     * 
+     * @author bjorn
      * @return represents collection of Score items
      */
     public static HashMap<String, Score> createScore() {
