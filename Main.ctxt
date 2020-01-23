@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=Main
-comment0.text=\r\n\ Main\ method\ that\ runs\ the\ game.\ Repeatedly\ allows\ for\ user\ input,\ and\ prints\r\n\ out\ proper\ information\ due\ to\ any\ given\ input.\ Stops\ when\ player\ has\ won\ or\r\n\ decides\ to\ quit.\r\n\ \r\n\ @author\ Bjorn\ and\ Minco\r\n\r\n
+comment0.text=\r\n\ Main\ method\ that\ runs\ the\ game.\ Repeatedly\ allows\ for\ user\ input,\ and\ prints\r\n\ out\ proper\ information\ due\ to\ any\ given\ input.\ Stops\ when\ player\ has\ won\ or\r\n\ decides\ to\ quit.\r\n\ \r\n\ @author\ Bjorn\r\n\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
-comment1.text=\r\n\ Method\ to\ represent\ player\ interaction\ with\ game.\r\n\ \r\n\ @param\ args\r\n\ \r\n
+comment1.text=\r\n\ Method\ to\ represent\ player\ interaction\ with\ game.\r\n\ \r\n\ @param\ args\r\n\ \r\n\ @author\ Bjorn\r\n
 numComments=2

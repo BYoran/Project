@@ -5,16 +5,17 @@ import java.util.*;
  * out proper information due to any given input. Stops when player has won or
  * decides to quit.
  * 
- * @author Bjorn and Minco
+ * @author Bjorn
  *
  */
 public class Main {
 
     /**
      * Method to represent player interaction with game.
-     * @author bjorn and minco
+     * 
      * @param args
      * 
+     * @author Bjorn
      */
     public static void main(String[] args) {
         Player player = new Player();
@@ -53,11 +54,8 @@ public class Main {
                     // check if we meet goal for taking object
                     player.checkScores(scores, "take " + temp);
 
-                } else if (command.length == 1) { // if no item
+                } else if (command.length == 1) { // else if no item
                     System.out.println("Sorry, but you can't take nothing.");
-                    System.out.println();
-                } else { // else
-                    System.out.println(command[1] + " not found/doesn't exist, please try again!");
                     System.out.println();
                 }
 
@@ -72,16 +70,13 @@ public class Main {
                     temp = temp.trim();
                     player.drop(temp, rooms);
 
-                } else if (command.length == 1) { // if no item
+                } else if (command.length == 1) { // else if no item
                     System.out.println("Sorry, but you can't drop nothing.");
-                    System.out.println();
-                } else { // else
-                    System.out.println(command[1] + "not found/doesn't exist, please try again!");
                     System.out.println();
                 }
             
             } else if (command[0].equals("bake")) { // if want to bake recipe
-                // making sure input has command and item    
+                // making sure input has command and recipe   
                 if (command.length >= 2) {
                     String temp = "";
                     // create string of object name
@@ -90,16 +85,13 @@ public class Main {
                     }
                     temp = temp.trim();
                     
-                    player.bake(temp, rooms);
+                    player.bake(temp);
                     
                     // check if we meet goal for baking object
                     player.checkScores(scores, "bake " + temp);
                     
-                } else if (command.length == 1) { // if no item
+                } else if (command.length == 1) { // else if no item
                     System.out.println("Sorry, but you can't bake nothing.");
-                    System.out.println();
-                } else { // else
-                    System.out.println(command[1] + "not found/doesn't exist, please try again!");
                     System.out.println();
                 }
                 
@@ -113,39 +105,32 @@ public class Main {
                     }
                     temp = temp.trim();
                     player.look(temp);
+                    System.out.println();
                 } else if (command.length == 1) { // else want to look at room
                     player.look(rooms);
-                } else { // else
-                    System.out.println(command[1] + "not found/doesn't exist, please try again!");
                     System.out.println();
-                }
+                } 
 
-            } else if (command[0].equals("move") || command[0].equals("go")) { // else
-                // wants
-                // to
-                // move
+            } else if (command[0].equals("move") || command[0].equals("go")) { // player wants to move
                 if (command.length >= 2) {
                     player.move(command[1], rooms);
                     System.out.println(rooms.get(player.getLocation()).getDescription());
-                } else if (command.length == 1) { // if no direction
+                } else if (command.length == 1) { // else if no direction
                     System.out.println("Sorry, but you can't move to nothing");
-                    System.out.println();
-                } else { // else
-                    System.out.println(command[1] + "not found/doesn't exist, please try again!");
                     System.out.println();
                 }
                 
             } else if (command[0].equals("north") || command[0].equals("east") || command[0].equals("south")
-            || command[0].equals("west") || command[0].equals("up") || command[0].equals("down")) { // wants to move, only by
-                // giving direction
+            || command[0].equals("west") || command[0].equals("up") || command[0].equals("down")) { // wants to move, only by giving direction
                 player.move(command[0], rooms);
                 System.out.println(rooms.get(player.getLocation()).getDescription());
             } else if (command.length == 1) { // else
                 if (command[0].equals("score")) {// if want to check score
                     System.out.println(player.getScore());
-                } else if (command[0].equals("inventory")) { // if want to check
-                    // inventory
+                    System.out.println();
+                } else if (command[0].equals("inventory")) { // if want to check inventory
                     player.getInventory();
+                    System.out.println();
                 } else if (command[0].equals("back")) { // if want to go back to previous room
                     player.back(rooms);
                 } else if (command[0].equals("about")) { // if want to see about game
@@ -165,10 +150,11 @@ public class Main {
 
             // if we have completed all goals
             if (scores.isEmpty()) {
-                System.out.println("Congratulation! You have made all the recipes required to feel " + '\n'
-                    + "about yourself. You store the recipes on the kitchen and you make yourself " + '\n'
-                    + "to go home.");
-                System.out.println("You finished with a score of " + player.getScore());
+                System.out.println("Congratulations! You have made both the recipes required to feel " + '\n'
+                    + "good about yourself. You store the recipes on the kitchen and you make yourself " + '\n'
+                    + "ready to go home.");
+                System.out.println();
+                System.out.println("You finished with a total score of " + player.getScore());
                 System.exit(0);
             }
         }

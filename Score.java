@@ -3,7 +3,7 @@
  * A class that represents the requirements of goals for player to reach in
  * order to earn points.
  * 
- * @author Bjorn and Minco
+ * @author Minco
  *
  */
 public class Score {
@@ -23,6 +23,7 @@ public class Score {
      *            represents where action is to take place
      * @param score
      *            represents points to be awarded
+     * @author Minco
      */
     public Score(String action, String item, String place, int score) {
         action_ = action;
@@ -34,7 +35,9 @@ public class Score {
     /**
      * Getter method that returns points of goal.
      * 
-     * @return int number represents points to be awarded
+     * @return
+     *          int number represents points to be awarded
+     * @author Minco
      */
     public int getScore() {
         return score_;
@@ -43,7 +46,9 @@ public class Score {
     /**
      * Getter method that returns the type of action required.
      * 
-     * @return String representation of command required from player
+     * @return
+     *          String representation of command required from player
+     * @author Minco
      */
     public String getAction() {
         return action_;
@@ -52,7 +57,9 @@ public class Score {
     /**
      * Getter method the returns item involved, if there is one.
      * 
-     * @return name of item
+     * @return
+     *          name of item
+     * @author Minco
      */
     public String getItem() {
         return item_;
@@ -61,7 +68,9 @@ public class Score {
     /**
      * Getter method the returns where action is to take place.
      * 
-     * @return name of room
+     * @return
+     *          name of room
+     * @author Minco
      */
     public String getPlace() {
         return place_;

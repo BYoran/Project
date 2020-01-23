@@ -1,9 +1,9 @@
 
 /**
- * A class that will represent one object from the world. Will include constructor as
+ * A class that will represent one object from the game. Will include constructor as
  * well as getter methods for important information about the objects.
  * 
- * @author Bjorn and Minco
+ * @author Minco
  *
  */
 public class Item {
@@ -20,6 +20,7 @@ public class Item {
      *          represents objects description
      * @param location
      *          represents objects starting location
+     * @author Minco
      */
     public Item (String name, String descrip, String location) {
         name_ = name;
@@ -29,8 +30,8 @@ public class Item {
     
     /**
      * Method used to print out the items description for player to read.
-     *
-     * @author minco
+     * 
+     * @author Minco
      */
     public void look() {
         System.out.println(description_);
@@ -38,10 +39,10 @@ public class Item {
         
     /**
      * Getter method that returns the items name.
-     *
-     * @author minco
+     * 
      * @return
-     *      String representing items name.
+     *          String representing items name
+     * @author Minco
      */
     public String getName () {
         return name_;
@@ -49,10 +50,10 @@ public class Item {
     
     /**
      * Getter method that returns items starting location.
-     *
-     * @author minco
+     * 
      * @return
-     *      String representing items starting location.
+     *          String representing items starting location
+     * @author Minco
      */
     public String getLocation () {
         return location_;
@@ -61,9 +62,9 @@ public class Item {
     /**
      * Getter method that returns items description.
      * 
-     * @author minco
      * @return
-     *      String representing items description.
+     *          String representing items description
+     * @author Minco
      */
     public String getDescription () {
         return description_;

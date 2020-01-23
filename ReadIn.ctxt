@@ -1,13 +1,13 @@
 #BlueJ class context
 comment0.target=ReadIn
-comment0.text=\r\n\ A\ class\ with\ the\ purpose\ of\ initializing\ the\ rooms\ and\ items\ and\ scoring\r\n\ guidelines\ that\ are\ to\ be\ used\ to\ play\ the\ adventure\ game.\ The\ class\ reads\ in\r\n\ from\ text\ files\ and\ extracts\ information\ from\ the\ files\ to\ use\ in\ the\r\n\ initialization\ process.\r\n\ \r\n\ @author\ Bjorn\ and\ Minco\r\n\r\n
+comment0.text=\r\n\ A\ class\ with\ the\ purpose\ of\ initializing\ the\ rooms\ and\ items\ and\ scoring\r\n\ guidelines\ that\ are\ to\ be\ used\ to\ play\ the\ adventure\ game.\ The\ class\ reads\ in\r\n\ from\ text\ files\ and\ extracts\ information\ from\ the\ files\ to\ use\ in\ the\r\n\ initialization\ process.\r\n\ \r\n\ @author\ Bjorn\ &\ Minco\r\n\r\n
 comment1.params=items
 comment1.target=java.util.HashMap\ createRooms(java.util.HashMap)
-comment1.text=\r\n\ Method\ that\ is\ used\ to\ create\ and\ initialize\ a\ collection\ of\ rooms\ that\r\n\ are\ to\ be\ navigated\ by\ the\ player.\ Reads\ in\ from\ predetermined\ text\ file.\r\n\ A\ HashMap\ of\ items\ to\ be\ stored\ in\ the\ rooms\ must\ be\ created\ first,\ as\ it\r\n\ will\ be\ passed\ through\ as\ a\ parameter\ to\ put\ object\ in\ the\ correct\ rooms.\r\n\ \r\n\ @param\ items\r\n\ \ \ \ \ \ \ \ \ \ \ \ represents\ the\ HashMap\ that\ represents\ collection\ of\ items\ in\r\n\ \ \ \ \ \ \ \ \ \ \ \ world\r\n\ @return\ a\ new\ HashMap\ representing\ the\ collection\ of\ rooms\r\n
+comment1.text=\r\n\ Method\ that\ is\ used\ to\ create\ and\ initialize\ a\ collection\ of\ rooms\ that\r\n\ are\ to\ be\ navigated\ by\ the\ player.\ Reads\ in\ from\ predetermined\ text\ file.\r\n\ A\ HashMap\ of\ items\ to\ be\ stored\ in\ the\ rooms\ must\ be\ created\ first,\ as\ it\r\n\ will\ be\ passed\ through\ as\ a\ parameter\ to\ put\ object\ in\ the\ correct\ rooms.\r\n\ \r\n\ @param\ items\r\n\ \ \ \ \ \ \ \ \ \ \ \ represents\ the\ HashMap\ that\ represents\ collection\ of\ items\ in\ game\r\n\ @return\r\n\ \ \ \ \ \ \ \ \ \ \ \ New\ HashMap\ representing\ the\ collection\ of\ rooms\r\n\ @author\ Bjorn\ &\ Minco\r\n
 comment2.params=
 comment2.target=java.util.HashMap\ createItems()
-comment2.text=\r\n\ Method\ that\ will\ create\ and\ initialize\ a\ collection\ of\ the\ items\ that\r\n\ will\ be\ placed\ in\ the\ game.\ Will\ read\ from\ predetermined\ text\ file.\ File\r\n\ must\ exist\ to\ be\ read.\r\n\ \r\n\ @return\ returns\ a\ HashMap\ representing\ collection\ of\ items\r\n
+comment2.text=\r\n\ Method\ that\ will\ create\ and\ initialize\ a\ collection\ of\ the\ items\ that\r\n\ will\ be\ placed\ in\ the\ game.\ Will\ read\ from\ predetermined\ text\ file.\ File\r\n\ must\ exist\ to\ be\ read.\r\n\ \r\n\ @return\r\n\ \ \ \ \ \ \ \ \ \ HashMap\ representing\ collection\ of\ items\r\n\ @author\ Bjorn\ &\ Minco\r\n
 comment3.params=
 comment3.target=java.util.HashMap\ createScore()
-comment3.text=\r\n\ Method\ that\ will\ create\ a\ collection\ of\ Score\ items,\ which\ hold\r\n\ requirements\ that\ must\ be\ met\ in\ order\ for\ the\ player\ to\ earn\ points.\r\n\ Reads\ in\ from\ a\ predetermined\ text\ file.\r\n\ \r\n\ @return\ represents\ collection\ of\ Score\ items\r\n
+comment3.text=\r\n\ Method\ that\ will\ create\ a\ collection\ of\ Score\ items,\ which\ hold\r\n\ requirements\ that\ must\ be\ met\ in\ order\ for\ the\ player\ to\ earn\ points.\r\n\ Reads\ in\ from\ a\ predetermined\ text\ file.\r\n\ \r\n\ @return\r\n\ \ \ \ \ \ \ \ \ \ represents\ collection\ of\ Score\ items\r\n\ @author\ Bjorn\ &\ Minco\r\n
 numComments=4

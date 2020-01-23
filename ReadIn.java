@@ -9,7 +9,7 @@ import java.util.*;
  * from text files and extracts information from the files to use in the
  * initialization process.
  * 
- * @author Bjorn and Minco
+ * @author Bjorn & Minco
  *
  */
 public class ReadIn {
@@ -20,11 +20,11 @@ public class ReadIn {
      * A HashMap of items to be stored in the rooms must be created first, as it
      * will be passed through as a parameter to put object in the correct rooms.
      * 
-     * @author minco
      * @param items
-     *            represents the HashMap that represents collection of items in
-     *            world
-     * @return a new HashMap representing the collection of rooms
+     *            represents the HashMap that represents collection of items in game
+     * @return
+     *            New HashMap representing the collection of rooms
+     * @author Bjorn & Minco
      */
     public static HashMap<String, Room> createRooms(HashMap<String, Item> items) {
         try {
@@ -71,9 +71,10 @@ public class ReadIn {
      * Method that will create and initialize a collection of the items that
      * will be placed in the game. Will read from predetermined text file. File
      * must exist to be read.
-     * @author bjorn
      * 
-     * @return returns a HashMap representing collection of items
+     * @return
+     *          HashMap representing collection of items
+     * @author Bjorn & Minco
      */
     public static HashMap<String, Item> createItems() {
         try {
@@ -116,8 +117,10 @@ public class ReadIn {
      * Method that will create a collection of Score items, which hold
      * requirements that must be met in order for the player to earn points.
      * Reads in from a predetermined text file.
-     * @author bjorn
-     * @return represents collection of Score items
+     * 
+     * @return
+     *          represents collection of Score items
+     * @author Bjorn & Minco
      */
     public static HashMap<String, Score> createScore() {
         try {
