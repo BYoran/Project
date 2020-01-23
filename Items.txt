@@ -45,10 +45,6 @@ OK boomer
 Transport Platform
 10-4 dinosaur.
 END
-The boys
-Transport Platform
-You found the boys. Now it's you and the boys making a cake.
-END
 Broken Bottle
 Kitchen
 You found a bottle but it's broken. It's useless.

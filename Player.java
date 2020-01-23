@@ -166,7 +166,7 @@ public class Player {
         } else if (random == 8) {
             location_ = "BreakRoom";
         }
-        System.out.println("Oh no! There is a blackhole sucking you in it... It brings you to a random room...");
+        System.out.println("Oh no! There is a big giant blackhole and it's sucking you in it... It brings you to a random room...");
         System.out.println();
     }
     
