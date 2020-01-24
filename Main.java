@@ -138,7 +138,7 @@ public class Main {
                     System.out.println("It was made due to a school assignement");
                     System.out.println("We hope you enjoy our game as much as we do");
                     System.out.println("For any questions feel free to contact us.");
-                    System.out.println("You can find our contact information in the README file.");
+                    System.out.println("You can find our contact information in the Technical Notes document.");
                 } else if (command[0].equals("quit")) { // if want to quit
                     System.out.println("Thank you for playing!");
                     System.exit(0);
